@@ -1,1 +1,65 @@
 
+# -----------------------------------------------
+# Site Settings
+# -----------------------------------------------
+title: "My Project"                  # Your site/repo title
+description: "A short description of your project."
+url: "https://YOUR-USERNAME.github.io"   # e.g. https://john.github.io
+baseurl: "/YOUR-REPO-NAME"               # e.g. /my-project  (leave "" if user/org site)
+
+# Author info
+author:
+  name: "Your Name"
+  email: "you@example.com"
+
+# -----------------------------------------------
+# Theme
+# -----------------------------------------------
+remote_theme: pages-themes/time-machine@v0.2.0
+plugins:
+  - jekyll-remote-theme   # required for remote_theme on GitHub Pages
+  - jekyll-seo-tag        # adds <meta> SEO tags automatically
+  - jekyll-sitemap        # generates /sitemap.xml
+  - jekyll-feed           # generates /feed.xml RSS
+
+# -----------------------------------------------
+# Build Settings
+# -----------------------------------------------
+markdown: kramdown
+highlighter: rouge
+permalink: pretty           # URLs like /posts/my-post/ instead of .html
+
+kramdown:
+  input: GFM               # GitHub Flavoured Markdown
+  syntax_highlighter: rouge
+
+# -----------------------------------------------
+# Collections (optional — remove if not needed)
+# -----------------------------------------------
+# collections:
+#   docs:
+#     output: true
+#     permalink: /docs/:name/
+
+# -----------------------------------------------
+# Defaults (optional)
+# -----------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+# -----------------------------------------------
+# Exclude from build
+# -----------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
