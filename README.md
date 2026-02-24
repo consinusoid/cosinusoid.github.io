@@ -1,1 +1,3 @@
 # cosinusoid.github.io
+--- 
+$\approx$
