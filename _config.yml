@@ -5,7 +5,7 @@
 title: "My Project"                  # Your site/repo title
 description: "A short description of your project."
 url: "https://COSINUSOID.github.io"   # e.g. https://john.github.io
-baseurl: "/YOUR-REPO-NAME"               # e.g. /my-project  (leave "" if user/org site)
+baseurl: ""               # e.g. /my-project  (leave "" if user/org site)
 
 # Author info
 author:
